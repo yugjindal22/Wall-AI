@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Faces */
+@font-face {
+    font-family: 'boogle-regular';
+    src: url('/fonts/BogleWeb_subset-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'boogle-bold';
+    src: url('/fonts/BogleWeb_subset-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'ui-font';
+    src: url('/fonts/ui-icons.a7ac8dea.ttf');
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: boogle-regular;
+    position: relative;
+}
+
+/* Page Loader */
+.page-loader{
+    height: 100%;
+    width: 100%;
+    background-color:#023047;
+    font-size: 2vw;
+    font-family: boogle-bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    letter-spacing: 4%;
+    color: #8ECAE6;
+    gap: 2%;
+}
+
+.logo-project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-project img{
+    height: 4vw;
+    margin-right:2% ;
+    opacity: 0;
+}
+
+.logo-project h1{
+    opacity: 0;
+}
+
+.page-loader #by{
+    margin-top: 2%;
+    opacity: 0;
+}
+
+.page-loader #name{
+    margin-top: 2%;
+    opacity: 0;
+}
